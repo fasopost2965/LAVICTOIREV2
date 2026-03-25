@@ -14,8 +14,8 @@
         <link rel="shortcut icon" href="assets/img/favicon.png">
         <!--<< Bootstrap min.css >>-->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <!--<< All Min Css >>-->
-        <link rel="stylesheet" href="assets/css/all.min.css">
+        <!--<< Font Awesome.css >>-->
+        <link rel="stylesheet" href="assets/css/font-awesome.css">
         <!--<< Animate.css >>-->
         <link rel="stylesheet" href="assets/css/animate.css">
         <!--<< Icomon.css >>-->
@@ -25,7 +25,7 @@
         <!--<< MeanMenu.css >>-->
         <link rel="stylesheet" href="assets/css/meanmenu.css">
         <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/cssice-select.css">
         <!--<< Odometer.css >>-->
         <link rel="stylesheet" href="assets/css/odometer.css">
         <!--<< Swiper Bundle.css >>-->
@@ -43,9 +43,15 @@
                 <div class="txt-loading">
                     <span data-text-preloader="L" class="letters-loading">L</span>
                     <span data-text-preloader="A" class="letters-loading">A</span>
+                    <span data-text-preloader="&nbsp;" class="letters-loading">&nbsp;</span>
                     <span data-text-preloader="V" class="letters-loading">V</span>
                     <span data-text-preloader="I" class="letters-loading">I</span>
                     <span data-text-preloader="C" class="letters-loading">C</span>
+                    <span data-text-preloader="T" class="letters-loading">T</span>
+                    <span data-text-preloader="O" class="letters-loading">O</span>
+                    <span data-text-preloader="I" class="letters-loading">I</span>
+                    <span data-text-preloader="R" class="letters-loading">R</span>
+                    <span data-text-preloader="E" class="letters-loading">E</span>
                 </div>
                 <p class="text-center">Chargement...</p>
             </div>
@@ -82,8 +88,12 @@
                         <h3 class="offcanvas-title">Bienvenue !</h3>
                         <p>L'&Eacute;cole Priv&eacute;e La Victoire est un &eacute;tablissement d'excellence &agrave; T&eacute;touan, d&eacute;di&eacute; &agrave; l'&eacute;veil et &agrave; l'&eacute;ducation des enfants.</p>
                         <div class="mobile-menu fix mt-3"></div>
+                        <div class="social-icon d-flex align-items-center mt-4 mb-4">
+                            <a href="https://web.facebook.com/ecolelavictoiretetouan/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/ecole.lavictoire" target="_blank"><i class="fab fa-instagram"></i></a>
+                        </div>
                         <div class="offcanvas__contact">
-                            <h3>Contact Us</h3>
+                            <h3>Contactez-nous</h3>
                             <ul class="contact-list">
                                 <li>
                                     <div class="icon"><i class="far fa-phone-alt"></i></div>
@@ -138,22 +148,45 @@
                                     <img src="assets/img/logo/black-logo.svg" alt="img">
                                 </a>
                             </div>
-                            <div class="header-right d-flex justify-content-end align-items-center">
-                                <div class="mean__menu-wrapper">
+                            <div class="mean__menu-wrapper">
                                     <div class="main-menu">
                                         <nav id="mobile-menu">
-                                            <ul>
-                                                <li><a href="index.html">Accueil</a></li>
+                                    <ul>
+                                        <li><a href="index.html">Accueil</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="about.html">L'&Eacute;cole <i class="fas fa-chevron-down" style="font-size:10px;margin-left:3px"></i></a>
+                                            <ul class="submenu">
                                                 <li><a href="about.html">&Agrave; propos</a></li>
-                                                <li><a href="program.html">Cycles</a></li>
-                                                <li><a href="contact.html">Contact</a></li>
+                                                <li><a href="philosophie.html">Notre Philosophie</a></li>
+                                                <li><a href="restauration.html">Restauration & Services</a></li>
+                                                    <li><a href="digitale.html">École Digitale</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
                                             </ul>
-                                        </nav>
+                                        </li>
+                                        <li class="has-dropdown">
+                                            <a href="classes.html">Cycles <i class="fas fa-chevron-down" style="font-size:10px;margin-left:3px"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="cycle-creche.html">La Cr&egrave;che</a></li>
+                                                <li><a href="cycle-maternelle.html">La Maternelle</a></li>
+                                                <li><a href="cycle-primaire.html">Le Primaire</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="galerie.html">Galerie</a></li>
+                                        <li><a href="equipe.html">Notre &Eacute;quipe</a></li>
+                                        <li><a href="transport.html">Transport</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </nav>
                                     </div>
                                 </div>
-                                <a href="contact.html" class="theme-btn">Inscriptions <i class="icon-arrow-icon"></i></a>
-                                <div class="header__hamburger my-auto d-xl-none">
-                                    <div class="sidebar__toggle"><i class="fal fa-bars"></i></div>
+                        <div class="header-right d-flex justify-content-end align-items-center">
+                            <a href="admissions.html" class="theme-btn border-radius-none">Inscriptions <i class="icon-arrow-icon"></i></a>
+                            <div class="header__hamburger my-auto d-xl-none">
+                                <div class="sidebar__toggle">
+                                    <i class="fal fa-bars"></i>
+                                </div>
+                            </div>
+                        </div>
                                 </div>
                             </div>
                         </div>
@@ -254,58 +287,128 @@
             <div class="container">
                 <div class="map-items">
                     <div class="googpemap">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3243.6475734267676!2d-5.3698!3d35.578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0b43f1d8cba8c1%3A0xe7a5c7f8c5b1c7c!2sT%C3%A9touan!5e0!3m2!1sfr!2sma!4v1711280000000!5m2!1sfr!2sma" style="border:0; width:100%; height:450px;" allowfullscreen="" loading="lazy"></iframe>
+                        <iframe src="https://maps.google.com/maps?q=Pharmacie%20Bakkali,%20T%C3%A9touan,%20Maroc&t=&z=16&ie=UTF8&iwloc=&output=embed" style="border:0; width:100%; height:450px;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- footer Section start --> 
-        <footer class="footer-section footer-section-four fix">
+        <footer class="footer-section">
+            <div class="bottom-shape">
+                <img src="assets/img/footer/bg-bottom.png" alt="shape-img">
+            </div>
+            <div class="busket-shape float-bob-x">
+                <img src="assets/img/footer/busket.png" alt="shape-img">
+            </div>
+            <div class="ball-shape float-bob-y">
+                <img src="assets/img/footer/ball.png" alt="shape-img">
+            </div>
             <div class="container">
                 <div class="footer-widgets-wrapper">
-                    <div class="row g-4">
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".2s">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-6 col-md-8 wow fadeInUp" data-wow-delay=".2s">
                             <div class="single-footer-widget">
                                 <div class="widget-head">
-                                    <a href="index.html">
-                                        <img src="assets/img/logo/white-logo.svg" alt="logo-img">
+                                    <a href="index-2.html">
+                                        <img src="assets/img/footer/Logo.svg" alt="logo-image">
                                     </a>
                                 </div>
                                 <div class="widget-content">
-                                    <p>L'&Eacute;cole Priv&eacute;e La Victoire est un &eacute;tablissement d'excellence &agrave; T&eacute;touan.</p>
+                                    <p>L'&Eacute;cole Priv&eacute;e La Victoire est un &eacute;tablissement d'excellence
+                                        &agrave;
+                                        T&eacute;touan, d&eacute;di&eacute; &agrave;
+                                        l'&eacute;veil et &agrave; l'&eacute;ducation des enfants d&egrave;s le plus jeune
+                                        &acirc;ge.</p>
+                                    <ul class="social-icon">
+                                        <li>
+                                            <a href="https://web.facebook.com/ecolelavictoiretetouan/" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                        </li>
+                                        <li>
+                                            <a href="https://www.instagram.com/ecole.lavictoire" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-xl-2 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 wow fadeInUp" data-wow-delay=".4s">
                             <div class="single-footer-widget">
-                                <div class="widget-head"><h3>Liens rapides</h3></div>
-                                <ul class="list-area">
-                                    <li><a href="index.html">Accueil</a></li>
-                                    <li><a href="about.html">&Agrave; propos</a></li>
-                                    <li><a href="program.html">Cycles</a></li>
-                                    <li><a href="contact.html">Contact</a></li>
-                                </ul>
+                                <div class="widget-head">
+                                    <h3>Liens rapides</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-area">
+                                        <li class="has-dropdown">
+                                            <a href="classes.html">Cycles <i class="fas fa-chevron-down" style="font-size:10px;margin-left:3px"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="cycle-creche.html">La Cr&egrave;che</a></li>
+                                                <li><a href="cycle-maternelle.html">La Maternelle</a></li>
+                                                <li><a href="cycle-primaire.html">Le Primaire</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="classes.html">Programmes</a></li>
+                                        <li class="has-dropdown">
+                                            <a href="about.html">La Victoire <i class="fas fa-chevron-down" style="font-size:10px;margin-left:3px"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="about.html">&Agrave; propos</a></li>
+                                                <li><a href="faq.html">FAQ</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay=".6s">
                             <div class="single-footer-widget">
-                                <div class="widget-head"><h3>Contact</h3></div>
-                                <ul class="contact-list">
-                                    <li>Rue Yassima, T&eacute;touan</li>
-                                    <li>06 38 91 53 02</li>
-                                    <li>contact@groupelavictoire.com</li>
-                                </ul>
+                                <div class="widget-head">
+                                    <h3>Informations</h3>
+                                </div>
+                                <div class="widget-content">
+                                    <ul class="list-area">
+                                        <li><a href="faq.html">FAQ</a></li>
+                                    <li><a href="contact.html">Contactez-nous</a></li>
+                                        <li><a href="contact.html">R&egrave;glement Int&eacute;rieur</a></li>
+                                        <li><a href="contact.html">Espace Parents</a></li>
+                                        <li><a href="news.html">Blog & Actualit&eacute;s</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="single-footer-widget">
+                                <div class="widget-content">
+                                    <div class="contact-info">
+                                        <div class="icon">
+                                            <img src="assets/img/footer/email.svg" alt="icon-image">
+                                        </div>
+                                        <div class="content">
+                                            <h3>Email</h3>
+                                            <p>
+                                                <a
+                                                    href="mailto:contact@groupelavictoire.com">contact@groupelavictoire.com</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="contact-info">
+                                        <div class="icon">
+                                            <img src="assets/img/footer/location.svg" alt="icon-image">
+                                        </div>
+                                        <div class="content">
+                                            <h3>Localisation</h3>
+                                            <p>
+                                                Rue Yassima, en face de la Pharmacie Bakkali, T&eacute;touan
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <div class="container">
-                    <div class="footer-wrapper d-flex align-items-center justify-content-between">
-                        <p>&copy; 2026 &Eacute;cole Priv&eacute;e La Victoire. Tous droits r&eacute;serv&eacute;s.</p>
-                    </div>
+                    <p class="footer-bottom wow fadeInUp" data-wow-delay=".5s">&copy; <a href="index.html"> &Eacute;cole La
+                            Victoire</a> 2026 . Tous droits r&eacute;serv&eacute;s.</p>
                 </div>
             </div>
         </footer>
